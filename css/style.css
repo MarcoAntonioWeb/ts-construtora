@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
+
+/***************** body *************/
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+
+
+/**************** Configuração para Mobile *************/
+@media screen and (min-width:900px) and (max-width:1024px) {
+    #imagem img {
+        width: 300px;
+        height: 200px;
+        padding: 5px 5px;
+        margin: 5px 5px;
+        box-shadow: 8px 8px 15px black;
+    }
+    
+  
+}
+
+/**** Formulario  ****/
+#formulario {
+    border-radius: 10px;
+    width: 60%;
+    margin: auto;
+    border: none;
+
+}
+
+#for-header {
+    border-radius: 10px 10px 0 0;
+    border: none;
+
+}
+@media screen and (min-width:300px) and (max-width:1024px) {
+    #formulario {
+        border-radius: 10px;
+        width: 90%;
+        margin: auto;
+        border: none;
+    
+    }
+
+    #verimg {
+        padding: 5px 35px !important;
+        font-size: 1.6rem !important;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+}
+/******** Final Mobile ********/
+
+
+/************ Menu ****************/
+nav, #bg-cor-fundo {
+    background-color: black !important;
+    text-transform: uppercase;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+
+}
+
+img#imgLogo {
+    background-image: url("/img/logo.jpeg") !important;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 38px;
+}
+/****** Imagem do texto principal ********/
+.principal {
+    background: url("../img/fundoPrincipal.png") fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 900px;
+
+}
+
+
+/*************  TEXT Principal **************/
+.textpricipal h1 {
+    position: relative;
+    padding-top: 230px;
+    font-family: 'Oswald', sans-serif !important;
+    color: rgb(251, 251, 251);
+    font-size: 5rem;
+    font-weight: 700;
+    text-align: center;
+
+
+}
+.textpricipal p.subtexto {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 45px ;
+    text-align: center;
+    font-weight: 800;
+    color: rgb(255, 254, 253);
+}
+
+/******* SECTION ON **********/
+.sectionUm {
+    padding-top:50px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.underline-section {
+    content: '';
+    border-top: 4px solid #FF8000;
+    width: 150px;
+    display: block;
+    margin-bottom: 8px;
+    margin: 0 auto; 
+  }
+.sobre {
+    font-family:'Quicksand', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+#imagem img {
+    width: 400px;
+    height: 300px;
+    padding: 5px 5px;
+    margin: 15px 15px;
+    box-shadow: 8px 8px 15px black;
+}
+#vermais {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-decoration: none !important;
+   
+}
+
+#vermais a input {
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    border-radius: 30px;
+    font-size: 20px;
+    color: white;
+    background: rgba(34,34,153,0.8);
+    text-decoration: none !important;
+}
+ a input#verimg:hover {
+    text-decoration: none;
+    background-color: rgba(23, 23, 170, 0.8);
+
+}
+
+input [type=submit] {
+    border-radius: 25px;
+}
+
+#for-img {
+    background: url("../img/fundo.jpg") fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+}
+
+ul#rodape-end  {
+    list-style: none;
+    color: white;
+    font-family:'Quicksand', sans-serif;
+    
+}
+
+.copy {
+    background: rgb(116, 115, 115);
+}
