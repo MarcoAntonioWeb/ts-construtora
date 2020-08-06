@@ -39,7 +39,7 @@ html, body {
     border: none;
 
 }
-@media screen and (min-width:200px) and (max-width:1024px) {
+@media screen and (min-width:300px) and (max-width:1024px) {
     #formulario {
         border-radius: 10px;
         width: 90%;
@@ -49,6 +49,7 @@ html, body {
     }
 
     #verimg {
+        margin-left: 20px !important;
         padding: 5px 55px !important;
         font-size: 1.6rem !important;
     }
