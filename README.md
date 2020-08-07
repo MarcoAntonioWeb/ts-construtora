@@ -9,6 +9,7 @@
 * JavaScript
 * Jquery Versão: 3.5.1
 * Popper.Js
+* PHP
 ----------------------------------------------------
 
 ## Licença 

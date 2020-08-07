@@ -108,28 +108,28 @@
         <div class="container-fluid">
             <div id="imagem" class="row py-3">
                 <div class="col-sm-12 col-md-8 col-lg-12">
-                    <img class="img-fluid col-md-8 img-thumbnail" src="img/img1.jpeg" alt="">
+                    <img class="img-fluid col-md-8 img-thumbnail" src="img/img1.jpeg" alt="imagem piso">
                 
-                    <img class="img-fluid col-md-8 img-thumbnail" src="img/img2.jpeg" alt="">
+                    <img class="img-fluid col-md-8 img-thumbnail" src="img/img2.jpeg" alt="imagem piso">
                     
-                    <img class="img-fluid col-md-8 img-thumbnail" src="img/img3.jpeg" alt="">
+                    <img class="img-fluid col-md-8 img-thumbnail" src="img/img3.jpeg" alt="imagem piso">
   
                 </div>
                     
                 <div class="col-sm-12 col-md-8 col-lg-12">
-                    <img class="img-fluid col-md-8 img-thumbnail" src="img/img4.jpeg" alt="">
+                    <img class="img-fluid col-md-8 img-thumbnail" src="img/img4.jpeg" alt="imagem piso">
                 
-                    <img class="img-fluid col-md-8 img-thumbnail" src="img/img5.jpeg" alt="">
+                    <img class="img-fluid col-md-8 img-thumbnail" src="img/img5.jpeg" alt="imagem piso">
                     
-                    <img class="img-fluid col-md-8 img-thumbnail" src="img/img6.jpeg" alt="">             
+                    <img class="img-fluid col-md-8 img-thumbnail" src="img/img6.jpeg" alt="imagem piso">             
                 </div>
 
                 <div class="col-sm-12 col-md-8 col-lg-12">
-                    <img class="img-fluid col-md-8 img-thumbnail" src="img/img7.jpeg" alt="">
+                    <img class="img-fluid col-md-8 img-thumbnail" src="img/img7.jpeg" alt="imagem piso">
                 
-                    <img class="img-fluid col-md-8 img-thumbnail" src="img/img8.jpeg" alt="">
+                    <img class="img-fluid col-md-8 img-thumbnail" src="img/img8.jpeg" alt="imagem piso">
                     
-                    <img class="img-fluid col-md-8 img-thumbnail" src="img/img9.jpeg" alt="">             
+                    <img class="img-fluid col-md-8 img-thumbnail" src="img/img9.jpeg" alt="imagem piso">             
                 </div>
             </div>
 
@@ -147,7 +147,7 @@
      <!--Form with header-->
 <div class="container-fluid py-5" id="for-img">
     <div class="py-5"></div>
-     <form  action="mail.php" method="post">
+     <form method="POST" action="./email.php">
         <div id="formulario"class="card ">
             <div class="card-header p-0">
                 <div id="for-header" class="text-white text-center py-2" 
@@ -164,7 +164,7 @@
                         <div class="input-group-prepend">
                             <div class="input-group-text"><i class="fa fa-user text-info" ></i></div>
                         </div>
-                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nome" required>
+                        <input type="text" class="form-control" id="nombre" name="nome" placeholder="Nome" required>
                     </div>
                 </div>
 
@@ -173,7 +173,7 @@
                         <div class="input-group-prepend">
                             <div class="input-group-text"><i class="fa fa-phone-square text-info" aria-hidden="true"></i></div>
                         </div>
-                        <input type="tel" class="form-control" id="nombre" name="tel" placeholder="Telefone" required>
+                        <input type="tel" class="form-control" id="nombre" name="telefone" placeholder="Telefone" required>
                     </div>
                 </div>
 
@@ -192,7 +192,7 @@
                         <div class="input-group-prepend">
                             <div class="input-group-text"><i class="fa fa-comment text-info"></i></div>
                         </div>
-                        <textarea class="form-control" placeholder="Enviar Mensagem" required></textarea>
+                        <textarea class="form-control" name="message" placeholder="Enviar Mensagem" required></textarea>
                     </div>
                 </div>
 
