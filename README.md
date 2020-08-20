@@ -1,6 +1,6 @@
 # TS Acabanentos e Reformas 
 
-### Este projeto é para área de construção  civil.
+### Este projeto é para área da construção  civil.
 ----------------------------------------------------
 
 ## Este projeto foi criado com.

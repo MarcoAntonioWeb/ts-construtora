@@ -1,7 +1,20 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BEM0R0ZXP8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BEM0R0ZXP8');
+</script>
+
     
+   <?php include_once 'email.php';?>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -148,7 +161,7 @@
      <!--Form with header-->
 <div class="container-fluid py-5" id="for-img">
     <div class="py-5"></div>
-     <form method="POST" action="./email.php">
+     <form method="post" action="index.php#formulario" role="form" data-toggle="validator">
         <div id="formulario"class="card ">
             <div class="card-header p-0">
                 <div id="for-header" class="text-white text-center py-2" 
@@ -165,7 +178,7 @@
                         <div class="input-group-prepend">
                             <div class="input-group-text"><i class="fa fa-user text-info" ></i></div>
                         </div>
-                        <input type="text" class="form-control" id="nombre" name="nome" placeholder="Nome" required>
+                        <input type="text" class="form-control" id="nombre" name="nome" value="" placeholder="Nome" required>
                         <div class="help-block with-errors"></div>
                     </div>
                 </div>
@@ -186,8 +199,7 @@
                         <div class="input-group-prepend">
                             <div class="input-group-text"><i class="fa fa-envelope text-info"></i></div>
                         </div>
-                        <input type="email" class="form-control" id="nombre" name="email" placeholder="exemplo@gmail.com" 
-                        data-error="Por favor, informe um e-mail correto." required>
+                        <input type="email" class="form-control" id="nombre" name="email" value="" placeholder="exemplo@gmail.com" required> 
                         <div class="help-block with-errors"></div>
                     </div>
                 </div>
@@ -197,15 +209,18 @@
                         <div class="input-group-prepend">
                             <div class="input-group-text"><i class="fa fa-comment text-info"></i></div>
                         </div>
-                        <textarea class="form-control" name="message" placeholder="Enviar Mensagem" required></textarea>
+                        <textarea class="form-control" name="mensagem" placeholder="Enviar Mensagem" required></textarea>
                         <div class="help-block with-errors"></div>
                     </div>
                 </div>
 
-                <div class="text-center">
-                    <input type="submit" value="Enviar" name="btnSend" class="btn btn-info btn-block  py-2"  style="background: rgba(34,34,153,0.8)";>
-                    <div class="mensagem-alerta"><?php echo $msg ?></div>
-                </div>
+                <div class="form-group">
+                    <div class="text-center">
+                        <input type="submit" value="Enviar" name="btnSend" class="btn btn-info btn-block  py-2"  style="background: rgba(34,34,153,0.8)";>
+                        <a name="formulario"></a>
+                        <div class="mensagem-alerta"><?php echo $msg ?></div>
+                    </div>
+                </div>    
             </div>
 
         </div>
